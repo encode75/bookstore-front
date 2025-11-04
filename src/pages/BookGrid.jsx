@@ -59,8 +59,6 @@ function BookGrid() {
 
   const handleEdit = (book) => {
     // Define o livro a ser editado e abre o modal
-    console.log('Editar: ');
-    console.log(book);
     setBookToEdit(book);
     setShowBookModal(true);
   };

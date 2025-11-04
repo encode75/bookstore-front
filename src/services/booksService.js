@@ -15,8 +15,8 @@ const api = axios.create({
 export const createBook = (bookData) => api.post('/', bookData);
 export const getAllBooks = () => api.get('/');
 export const updateBook = (id, bookData) => {
-    console.log(`ID que vem de parâmetro: ${id}`);
-    console.log("Dados:", bookData);
+    //console.log(`ID que vem de parâmetro: ${id}`);
+    //console.log("Dados:", bookData);
     api.put(`/${id}`, bookData);
 }
 export const deleteBook = (id) => api.delete(`/${id}`);
